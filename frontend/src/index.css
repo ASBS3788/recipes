@@ -20,23 +20,46 @@ code {
 }
 
 .layout-header {
-	background-color: #f0f0f0;
-	padding: 20px;
+	background-color: #FAF3E0;
+	padding: 10px;
+	border-bottom: 1px solid #D1B28D;
 }
 
 .layout-content {
 	flex: 1;
-	background-color: #fff;
-	padding: 20px;
+	background-color: #FFFFFF;
+	padding: 10px;
 	overflow-y: auto;
 	scrollbar-width: thin;
-	/* scrollbar-color: pink white; */
+	scrollbar-color: #E4D4B9 white;
 }
 
 .layout-footer {
 	padding: 10px;
-	background-color: #f0f0f0;
+	background-color: #FAF3E0;
 	text-align: center;
 	font-size: 12px;
 	font-weight: 500;
+	border-top: 1px solid #D1B28D;
 }
+
+.custom-button {
+	padding: 10px 10px;               /* отступы по оси X и Y */
+	border-radius: 8px;               /* скругленные углы */
+	border: 1px solid #D8CAB8;        /* светло-бежевый цвет границы */
+	/*background-color: #FAF3E0;       /* кремовый цвет фона */
+	color: #4F4A42;                   /* темно-коричневый цвет текста */
+	font-size: 12px;                  /* размер шрифта */
+	font-weight: bold;                /* жирный шрифт */
+	text-align: center;               /* выравнивание текста по центру */
+	cursor: pointer;                 /* курсор при наведении */
+	transition: all 0.3s ease;        /* плавные переходы при изменении состояния */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* легкая тень */
+  }
+  
+  /* Стили для кнопки при наведении */
+  .custom-button:hover {
+	background-color: #E4D4B9;        /* светло-кремовый цвет фона при наведении */
+	border-color: #D1B28D;            /* граница с более теплым оттенком */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* усиленная тень */
+  }
