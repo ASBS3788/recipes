@@ -1,0 +1,54 @@
+.notification {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	max-width: 300px;
+	padding: 15px;
+	margin-bottom: 10px;
+	opacity: 1;
+	z-index: 9999;
+	animation: fadeIn 0.5s forwards;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #d1b28d;
+	border-radius: 12px;
+	background-color: white;
+}
+
+.notification.success {
+	color: #52c41a;
+}
+
+.notification.error {
+	color: #f5222d;
+}
+
+.notification.info {
+	color: #1890ff;
+}
+
+.notification.warning {
+	color: #faad14;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}

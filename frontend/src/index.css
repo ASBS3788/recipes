@@ -17,18 +17,18 @@ code {
 	flex-direction: column;
 	overflow: hidden;
 	height: 100vh;
+	background-color: #FFFFFF;
 }
 
 .layout-header {
 	background-color: #FAF3E0;
-	padding: 10px;
+	padding: 5px;
 	border-bottom: 1px solid #D1B28D;
 }
 
 .layout-content {
 	flex: 1;
-	background-color: #FFFFFF;
-	padding: 10px;
+	padding: 5px;
 	overflow-y: auto;
 	scrollbar-width: thin;
 	scrollbar-color: #E4D4B9 white;
@@ -41,13 +41,17 @@ code {
 	font-size: 12px;
 	font-weight: 500;
 	border-top: 1px solid #D1B28D;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .custom-button {
+	margin: 5px;
 	padding: 10px 10px;               /* отступы по оси X и Y */
-	border-radius: 8px;               /* скругленные углы */
+	border-radius: 12px;               /* скругленные углы */
 	border: 1px solid #D8CAB8;        /* светло-бежевый цвет границы */
-	/*background-color: #FAF3E0;       /* кремовый цвет фона */
+	background-color: #FAF3E0;       /* кремовый цвет фона */
 	color: #4F4A42;                   /* темно-коричневый цвет текста */
 	font-size: 12px;                  /* размер шрифта */
 	font-weight: bold;                /* жирный шрифт */
@@ -62,4 +66,5 @@ code {
 	background-color: #E4D4B9;        /* светло-кремовый цвет фона при наведении */
 	border-color: #D1B28D;            /* граница с более теплым оттенком */
 	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* усиленная тень */
+	color: #000000;
   }

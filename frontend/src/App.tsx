@@ -5,7 +5,8 @@ function App() {
 	const routes = useRoutes({ isAuth: true })
 
 	return (
-		<div className="App">
+		<div className="App" id="app-container">
+			<div id="notification-container"></div>
 			<Layout>{routes}</Layout>
 		</div>
 	)
